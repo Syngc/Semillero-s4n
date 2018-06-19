@@ -1,0 +1,11 @@
+OnlyTest co.com.s4n.semillero.ejercicio.mockito
+testOnly co.com.s4n.semillero.ejercicio.mockito
+testOnly test.java.co.com.s4n.semillero.ejercicio.mockito
+testOnly co.com.s4n.semillero.ejercicio.mockito
+testOnly co.com.s4n.semillero.ejercicio.*
+testOnly co.com.s4n.semillero.ejercicio.mockito
+exit
+testOnly co.com.s4n.semillero.ejercicio.mockito
+testOnly co.com.s4n.semillero.ejercico.*
+testOnly co.com.s4n.semillero.ejercicio.*
+testOnly co.com.s4n.semillero.ejercicio.dependencias
