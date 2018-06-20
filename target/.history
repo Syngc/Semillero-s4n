@@ -9,3 +9,55 @@ testOnly co.com.s4n.semillero.ejercicio.mockito
 testOnly co.com.s4n.semillero.ejercico.*
 testOnly co.com.s4n.semillero.ejercicio.*
 testOnly co.com.s4n.semillero.ejercicio.dependencias
+testOnly co.com.s4n.semillero.ejercicio.DronSuite
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+testOnly co.com.s4n.semillero.ejercicio.*
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.*
+clean:compile
+clean
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+testOnly co.com.s4n.semillero.ejercicio.DronSuiete
+testOnly co.com.s4n.semillero.ejercicio.DronSuite
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+testOnly co.com.s4n.semillero.ejercicio.DronSuite
+testOnly co.com.s4n.semillero.ejercicio.*
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+clean
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+clena
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+compile
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+clean
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+clean
+compile
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+test:compile
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+exit
+clean
+compile
+test:compile
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+testOnly co.com.s4n.semillero.ejercicio.DronSuite
+clean
+compile
+clean
+compile
+compile:test
+test:compile
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+clean
+compile
+compile:test
+test:compile
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+compile
+testOnly co.com.s4n.semillero.ejercicio.dependencias
+clean
+testOnly co.com.s4n.semillero.ejercicio.dependencias

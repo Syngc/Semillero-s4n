@@ -7,78 +7,78 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20180619171721"/>
+		date="20180620112002"/>
 	<dependencies>
 		<module organisation="org.powermock" name="powermock-api-mockito">
-			<revision name="1.7.4" status="release" pubdate="20180412142055" resolver="public" artresolver="public" homepage="http://www.powermock.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+			<revision name="1.7.4" status="release" pubdate="20180412142055" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.powermock.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5813" time="406" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito/ivy-1.7.4.xml" searched="true" original-local-location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito/ivy-1.7.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-api-mockito/1.7.4/powermock-api-mockito-1.7.4.pom"/>
+				<metadata-artifact status="no" details="" size="2867" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito/ivy-1.7.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-api-mockito/1.7.4/powermock-api-mockito-1.7.4.pom"/>
 				<caller organisation="com.example" name="s4n-java-semillero" conf="test, compile, provided, test-internal, runtime, optional" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="powermock-api-mockito" type="jar" ext="jar" status="successful" details="" size="85766" time="554" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito/jars/powermock-api-mockito-1.7.4.jar">
+					<artifact name="powermock-api-mockito" type="jar" ext="jar" status="no" details="" size="85766" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito/jars/powermock-api-mockito-1.7.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-api-mockito/1.7.4/powermock-api-mockito-1.7.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.powermock" name="powermock-api-mockito-common">
-			<revision name="1.7.4" status="release" pubdate="20180412142027" resolver="public" artresolver="public" homepage="http://www.powermock.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+			<revision name="1.7.4" status="release" pubdate="20180412142027" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.powermock.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="6366" time="368" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito-common/ivy-1.7.4.xml" searched="true" original-local-location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito-common/ivy-1.7.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-api-mockito-common/1.7.4/powermock-api-mockito-common-1.7.4.pom"/>
+				<metadata-artifact status="no" details="" size="3087" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito-common/ivy-1.7.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-api-mockito-common/1.7.4/powermock-api-mockito-common-1.7.4.pom"/>
 				<caller organisation="org.powermock" name="powermock-api-mockito" conf="default, compile, runtime, master" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.7.4"/>
 				<artifacts>
-					<artifact name="powermock-api-mockito-common" type="jar" ext="jar" status="successful" details="" size="35664" time="765" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito-common/jars/powermock-api-mockito-common-1.7.4.jar">
+					<artifact name="powermock-api-mockito-common" type="jar" ext="jar" status="no" details="" size="35664" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-mockito-common/jars/powermock-api-mockito-common-1.7.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-api-mockito-common/1.7.4/powermock-api-mockito-common-1.7.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.powermock" name="powermock-api-support">
-			<revision name="1.7.4" status="release" pubdate="20180412142103" resolver="public" artresolver="public" homepage="http://www.powermock.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+			<revision name="1.7.4" status="release" pubdate="20180412142103" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.powermock.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5803" time="358" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-support/ivy-1.7.4.xml" searched="true" original-local-location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-support/ivy-1.7.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-api-support/1.7.4/powermock-api-support-1.7.4.pom"/>
+				<metadata-artifact status="no" details="" size="2857" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-support/ivy-1.7.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-api-support/1.7.4/powermock-api-support-1.7.4.pom"/>
 				<caller organisation="org.powermock" name="powermock-api-mockito-common" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.7.4"/>
 				<artifacts>
-					<artifact name="powermock-api-support" type="jar" ext="jar" status="successful" details="" size="22965" time="1069" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-support/jars/powermock-api-support-1.7.4.jar">
+					<artifact name="powermock-api-support" type="jar" ext="jar" status="no" details="" size="22965" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-api-support/jars/powermock-api-support-1.7.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-api-support/1.7.4/powermock-api-support-1.7.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.powermock" name="powermock-core">
-			<revision name="1.7.4" status="release" pubdate="20180412142026" resolver="public" artresolver="public" homepage="http://www.powermock.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+			<revision name="1.7.4" status="release" pubdate="20180412142026" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.powermock.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5994" time="360" location="/home/s4n/.ivy2/cache/org.powermock/powermock-core/ivy-1.7.4.xml" searched="true" original-local-location="/home/s4n/.ivy2/cache/org.powermock/powermock-core/ivy-1.7.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-core/1.7.4/powermock-core-1.7.4.pom"/>
+				<metadata-artifact status="no" details="" size="3007" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-core/ivy-1.7.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-core/1.7.4/powermock-core-1.7.4.pom"/>
 				<caller organisation="org.powermock" name="powermock-api-support" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.7.4"/>
 				<artifacts>
-					<artifact name="powermock-core" type="jar" ext="jar" status="successful" details="" size="145588" time="460" location="/home/s4n/.ivy2/cache/org.powermock/powermock-core/jars/powermock-core-1.7.4.jar">
+					<artifact name="powermock-core" type="jar" ext="jar" status="no" details="" size="145588" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-core/jars/powermock-core-1.7.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-core/1.7.4/powermock-core-1.7.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.javassist" name="javassist">
-			<revision name="3.21.0-GA" status="release" pubdate="20161003114507" resolver="public" artresolver="public" homepage="http://www.javassist.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+			<revision name="3.21.0-GA" status="release" pubdate="20161003114507" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
 				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
 				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
 				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
-				<metadata-artifact status="successful" details="" size="9834" time="361" location="/home/s4n/.ivy2/cache/org.javassist/javassist/ivy-3.21.0-GA.xml" searched="true" original-local-location="/home/s4n/.ivy2/cache/org.javassist/javassist/ivy-3.21.0-GA.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.pom"/>
+				<metadata-artifact status="no" details="" size="3199" time="0" location="/home/s4n/.ivy2/cache/org.javassist/javassist/ivy-3.21.0-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.pom"/>
 				<caller organisation="org.powermock" name="powermock-core" conf="compile, runtime" rev="3.21.0-GA" rev-constraint-default="3.21.0-GA" rev-constraint-dynamic="3.21.0-GA" callerrev="1.7.4"/>
 				<artifacts>
-					<artifact name="javassist" type="bundle" ext="jar" status="successful" details="" size="734815" time="1491" location="/home/s4n/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar">
+					<artifact name="javassist" type="bundle" ext="jar" status="no" details="" size="734815" time="0" location="/home/s4n/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.powermock" name="powermock-reflect">
-			<revision name="1.7.4" status="release" pubdate="20180412142102" resolver="public" artresolver="public" homepage="http://www.powermock.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+			<revision name="1.7.4" status="release" pubdate="20180412142102" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.powermock.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5632" time="362" location="/home/s4n/.ivy2/cache/org.powermock/powermock-reflect/ivy-1.7.4.xml" searched="true" original-local-location="/home/s4n/.ivy2/cache/org.powermock/powermock-reflect/ivy-1.7.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-reflect/1.7.4/powermock-reflect-1.7.4.pom"/>
+				<metadata-artifact status="no" details="" size="2716" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-reflect/ivy-1.7.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/powermock/powermock-reflect/1.7.4/powermock-reflect-1.7.4.pom"/>
 				<caller organisation="org.powermock" name="powermock-api-support" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.7.4"/>
 				<caller organisation="org.powermock" name="powermock-core" conf="compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.7.4"/>
 				<artifacts>
-					<artifact name="powermock-reflect" type="jar" ext="jar" status="successful" details="" size="65549" time="1119" location="/home/s4n/.ivy2/cache/org.powermock/powermock-reflect/jars/powermock-reflect-1.7.4.jar">
+					<artifact name="powermock-reflect" type="jar" ext="jar" status="no" details="" size="65549" time="0" location="/home/s4n/.ivy2/cache/org.powermock/powermock-reflect/jars/powermock-reflect-1.7.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/powermock/powermock-reflect/1.7.4/powermock-reflect-1.7.4.jar"/>
 					</artifact>
 				</artifacts>
