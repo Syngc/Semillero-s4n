@@ -9,7 +9,7 @@ public class Ruta {
 
     public  Ruta(List<Coordenada> ruta){ this.ruta = ruta;}
 
-    public List getRuta() {
+    public List<Coordenada> getRuta() {
         return ruta;
     }
 

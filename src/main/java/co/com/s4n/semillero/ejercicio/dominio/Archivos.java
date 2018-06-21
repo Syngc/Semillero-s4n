@@ -1,30 +1,57 @@
 package co.com.s4n.semillero.ejercicio.dominio;
 
-import co.com.s4n.semillero.ejercicio.dominio.entidades.Coordenada;
-import co.com.s4n.semillero.ejercicio.dominio.entidades.Ruta;
+import co.com.s4n.semillero.ejercicio.dominio.entidades.Instruccion;
+import io.vavr.collection.Iterator;
 import io.vavr.collection.List;
-import io.vavr.control.Either;
 import io.vavr.control.Try;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
 
 public class Archivos {
 
-    public static Either<String, List<String>> leerArchivo(String s){
-        Either<String,List<String>> f = Try.of(() -> {
-            BufferedReader reader = new BufferedReader(new FileReader("./src/main/resources/" + s ));
-            List<String> l = List.of();
-            String direccion;
-            while((direccion = reader.readLine()) != null) {
-                l = l.push(direccion);
-            }
-            return l;
-        }).toEither("El archivo no ha sido encontrado");
-        return f;
+    public static  Try<List<Path>> listarPedidos(){
+        Try<Stream<Path>> tf = Try.of(() -> Files.walk(Paths.get("./src/main/resources/in")));
+        return Try.of(() -> tf.get().collect(List.collector()).tail());
     }
 
-    public static Boolean escribirArchivo(List<Coordenada> c){
-        return true;
+
+   public static List<String> leerArchivo(Path ruta){
+        Try<List<String>> f = Try.of(() -> {
+            List<String> l = List.of();
+            if (Files.isRegularFile(ruta)) {
+                BufferedReader reader = new BufferedReader( new FileReader(ruta.toString()));
+
+                String direccion;
+                while((direccion = reader.readLine()) != null) {
+                    l = l.append(direccion);
+                }
+            }
+            return l;
+        });
+        if(f.isSuccess()) return f.get();
+        return null;
+    }
+
+
+
+    public static void escribirArchivo(Iterator<List<Instruccion>> coordenadas, String n){
+        Try<Boolean> of = Try.of(() -> {
+            File file = new File("./src/main/resources/out/" + n);
+            FileWriter fileWriter = new FileWriter(file);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            printWriter.printf("====== Reporte de entregas =======\n");
+            coordenadas.forEach(a -> imprimir(printWriter, a));
+            printWriter.close();
+            return true;
+        });
+
+    }
+
+    public static void imprimir(PrintWriter p ,List<Instruccion> i){
+        i.forEach(b ->
+        p.printf("(" + b.getCoordenada().getX() + "," + b.getCoordenada().getY() + ") dirección " + b.getCoordenada().getC().name()+"\n"));
     }
 }

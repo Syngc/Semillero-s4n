@@ -1,23 +1,27 @@
 package co.com.s4n.semillero.ejercicio.dominio.servicios;
 
 import co.com.s4n.semillero.ejercicio.dominio.entidades.Coordenada;
+import co.com.s4n.semillero.ejercicio.dominio.entidades.Instruccion;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Cardinalidad;
 
 import static co.com.s4n.semillero.ejercicio.dominio.vo.Cardinalidad.*;
 
 public class servicioCoordenada {
 
-    public static Coordenada mover(Coordenada c, String s){
-        char[] array = s.toCharArray();
+
+
+    public static Instruccion mover(Instruccion c, Instruccion s){
+        char[] array = s.getRuta().toCharArray();
+        Coordenada nc = c.getCoordenada();
         for (char e: array) {
             switch (e) {
-                case 'A': c = avanzar(c); break;
-                case 'I': c = rotarIzquierda(c); break;
-                case 'D': c = rotarDerecha(c); break;
+                case 'A': nc = avanzar(nc); break;
+                case 'I': nc = rotarIzquierda(nc); break;
+                case 'D': nc = rotarDerecha(nc); break;
                 default: break;
             }
         }
-        return c;
+        return new Instruccion(" ", nc);
     }
 
     public static Coordenada avanzar(Coordenada c){
@@ -62,9 +66,9 @@ public class servicioCoordenada {
         return new Coordenada(x,y,z);
     }
 
-    public static Double calcularDistancia(Coordenada c){
-        int x = c.getX();
-        int y = c.getY();
+    public static Double calcularDistancia(Instruccion c){
+        int x = c.getCoordenada().getX();
+        int y = c.getCoordenada().getY();
         Double ans = Math.sqrt(Math.pow(x,2) + Math.pow(y,2));
         return ans;
     }
@@ -72,9 +76,5 @@ public class servicioCoordenada {
     public static boolean verificarDistancia(Double d){
         return  d < 10 ? true : false;
     }
-
-
-
-
 
 }
